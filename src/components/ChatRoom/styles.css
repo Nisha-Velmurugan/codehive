@@ -1,0 +1,24 @@
+.messages-container {
+    width: 100%;
+    padding: 16px;
+    flex-grow: 1;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 900px;
+    height: 500px;
+    background-color: #EAEAEA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+h2{
+    font-size: 2rem;
+}
+.text{
+    font-size: 1.2rem;
+}

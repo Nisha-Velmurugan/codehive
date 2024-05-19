@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+/* Main styles */
+body, html {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin: 0;
+  color: black;
+  font-family: "Asar", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  animation: bg-scrolling-reverse 0.92s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+body::before {
+  font-size: 8rem;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.homecontent {
+  border: 2px solid black;
+  padding: 20px;
+  height: 100%;
+  max-height: 700px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: auto;
+}
+
+div p {
+  font-size: x-large;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p b {
+  font-size: 1.5rem;
+}
+
+.button-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.bn47 {
+  position: relative;
+  padding: 1rem 2rem 0.5rem 2.5rem;
+  color: #000000;
+  border: 3px solid #776e62;
+  -webkit-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+  width: 150px;
+  height: 70px;
+  font-size: 1.2rem;
+  background-color: #B2B2B2;
+  color: black;
+}
+
+.bn47:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bn47:hover {
+  padding: 0.75rem 2.25rem;
+}
+
+.bn47:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.about h1 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.about-header {
+  margin-top: 100px;
+  margin-bottom: 50px; /* Add space between header and boxes */
+}
+
+.aboutsection {
+  display: flex;
+  justify-content: space-between; /* Distribute space between boxes */
+  gap: 100px;
+  max-width: 1200px;
+  max-height: 600px; /* Adjust as needed */
+  margin-bottom: 150px;
+}
+
+.box {
+  flex: 1; /* Equal width for all boxes */
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 1.5rem;
+}
+
+.box p {
+  font-size: 1.2rem;
+}

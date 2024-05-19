@@ -1,0 +1,27 @@
+.chat-room-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    display: block;
+    color: inherit; 
+    position: relative;
+    margin-top: 5%;
+}
+
+.chat-room-list li {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: var(--color-gray);
+    flex: 1 1 calc(400px - 4px);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
